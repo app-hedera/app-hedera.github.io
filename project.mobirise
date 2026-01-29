@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Hedera",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#3b3cc9"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/hedera_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://app-hedera.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://app-hedera.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "wvqhgbd7k6",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Hedera™ | Home | Official Site",
+        "meta_descr": "Hedera combines scalable technology, institutional network governance, and built-in compliance to provide trusted infrastructure and application services for regulated industries and beyond.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://hedera.com/\"><img src=\"@PROJECT_PATH@/assets/images/hedera.png\" alt=\"Hedera\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "v9FQ0ivb5b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#3b3cc9\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#3b3cc9\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Hedera Hashgraph: The Future of Distributed Ledger Technology</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the rapidly evolving landscape of blockchain and distributed ledger technology, Hedera Hashgraph has emerged as a unique and innovative solution. Launched in 2018, Hedera seeks to address the common challenges faced by traditional blockchains, such as scalability, speed, security, and energy efficiency. This article explores the core features of Hedera, its underlying technology, governance model, use cases, and its potential to transform various industries.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Hedera?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Overview<br>Hedera Hashgraph is a decentralized platform that provides a distributed public ledger for building next-generation decentralized applications (dApps). Unlike traditional blockchains, which store data in a linear fashion, Hedera uses a directed acyclic graph (DAG) structure, known as Hashgraph, enabling high throughput, quick finality, and low transaction costs.<br><br>Core Mission<br>Hedera's primary mission is to create a fast, secure, and equitable platform for decentralized applications, empowering developers and users to interact without intermediaries. Key goals include:<br><br>Scalability: Achieving thousands of transactions per second (TPS) to accommodate wide-scale adoption.<br>Security: Ensuring the integrity of the network through robust cryptographic principles.<br>Stability: Offering a reliable and predictable environment for enterprise-grade applications.<br>Governance: Establishing a decentralized governance model that ensures community involvement.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Technology Behind Hedera</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Hashgraph Consensus Algorithm<br>At the core of Hedera's advantages is its Hashgraph consensus algorithm. Here’s how it uniquely operates:<br><br>Gossip Protocol: Nodes communicate in a peer-to-peer manner, sharing information about transactions. This efficient gossip protocol allows for rapid propagation of information across the network.<br>Virtual Voting: After nodes have shared information, they use virtual voting to reach consensus on the order of transactions. This mechanism requires minimal communication overhead and enables fast agreement on transaction ordering.<br>2. Directed Acyclic Graph (DAG)<br>Unlike linear chains used in traditional blockchains, Hedera employs a DAG structure that allows multiple transactions to occur simultaneously, enhancing scalability. Key benefits include:<br><br>Concurrency: Transactions can be processed in parallel, leading to higher throughput.<br>Reduced Latency: Shorter confirmation times make Hedera suitable for applications requiring real-time processing, such as finance and gaming.<br>3. Smart Contracts<br>Hedera supports smart contracts built using the Solidity programming language, similar to Ethereum. This allows developers to create complex decentralized applications that automate processes and interactions with minimal overhead, benefiting from the platform's swift execution speed and lower costs.<br><br>4. Tokenization<br>Hedera enables the tokenization of assets, making it easy to create and manage digital representations of real-world assets. This feature opens the doors to various applications, from payment systems to asset management.<br><br>5. Cryptographic Security<br>Hedera utilizes advanced cryptographic techniques to secure its network. This includes:<br><br>Asynchronous Byzantine Fault Tolerance (aBFT): This consensus model ensures that the network can reach agreement and provide security, even if some nodes act maliciously.<br>Identity and Access Management: Users can authenticate their identities through cryptographic keys, ensuring secure access to applications and services.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Governance Structure</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Decentralized Governance Council<br>Hedera adopts a decentralized governance model through its Governing Council, which consists of up to 39 leading global organizations. These include companies such as Google, IBM, Boeing, and additional enterprises from various sectors. This structure is designed to avoid the pitfalls of centralization faced by many blockchain projects.<br><br>Key Features of the Governance Model:<br>Council Composition: The diverse council provides a balance of interests, ensuring that decisions reflect the needs of the broader ecosystem.<br>Voting Mechanism: Any major changes to the network require a majority vote from council members. This democratic approach allows stakeholders to have a say in the direction of the platform.<br>2. Stability and Predictability<br>Through its governance model, Hedera aims to provide stability and predictability in an otherwise turbulent blockchain landscape. The consistent participation of council members ensures ongoing improvements and adherence to regulatory standards, increasing trust among users.<br><br>3. Ecosystem Development<br>Council members are not just passive overseers; they actively contribute to the development of Hedera’s ecosystem by promoting research, funding initiatives, and facilitating the adoption of Hedera across industries.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases of Hedera</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Decentralized Finance (DeFi)<br>Hedera offers a robust platform for building DeFi applications, including:<br><br>Decentralized Exchanges (DEXs): Hedera’s speed and low transaction fees enable fast and cost-effective trading of cryptocurrencies and tokens.<br>Lending and Borrowing Platforms: Users can engage in lending and borrowing activities without intermediaries, thanks to smart contracts.<br>2. Supply Chain Management<br>The transparency and traceability provided by Hedera’s ledger make it an ideal foundation for supply chain solutions. Use cases include:<br><br>Provenance Tracking: Businesses can monitor the origin and journey of products, ensuring authenticity and compliance.<br>Automated Payments: Organizations can automate payments triggered by conditions in smart contracts, streamlining inventory and logistics processes.<br>3. Identity Management<br>Hedera's secure identity solutions can facilitate:<br><br>Digital Identity Verification: Users can manage their digital identities, granting access to services securely while maintaining their privacy.<br>Credential Issuance: Educational institutions can issue and verify certificates on the Hedera network, simplifying verification processes.<br>4. Healthcare Applications<br>In healthcare, Hedera can enhance data management by allowing for:<br><br>Secure Patient Record Storage: Healthcare providers can securely store and share patient information, improving coordination and care.<br>Clinical Trial Management: Smart contracts can be utilized to automate and validate processes in clinical trials, enhancing integrity and compliance.<br>5. Gaming and Non-Fungible Tokens (NFTs)<br>The gaming industry is rapidly adopting blockchain technology, and Hedera can host gaming applications that leverage:<br><br>In-Game Asset Management: Players can buy, sell, and trade virtual assets as NFTs, with ownership verifiable on the Hedera ledger.<br>NFT Marketplaces: Hedera can support marketplaces for artists and creators to sell their digital art and collectibles efficiently.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Advantages of Hedera</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Performance and Scalability<br>Hedera can achieve thousands of transactions per second, making it one of the fastest distributed ledger technologies available. This performance is crucial as demand for blockchain applications grows.<br><br>2. Low Transaction Fees<br>Hedera's low fees make it an affordable option for users and developers, facilitating broader adoption and experimentation with blockchain technology.<br><br>3. Environmental Sustainability<br>Hedera operates on a proof-of-stake mechanism that consumes significantly less energy than traditional proof-of-work systems. This environmentally friendly approach appeals to users looking to minimize their ecological footprint.<br><br>4. Robust Security<br>With its aBFT consensus model, Hedera provides strong security against attacks and fraud, ensuring that data remains secure and tamper-proof.<br><br>5. Enterprise-Grade Solutions<br>The involvement of major corporations in Hedera's governance ensures that the platform meets the needs of enterprise-level applications. This instills confidence among businesses considering migration to blockchain solutions.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Competition in the Blockchain Space<br>While Hedera's unique features set it apart, it must contend with a crowded market filled with established blockchains and emerging technologies. Continuous innovation and differentiation will be essential for its success.<br><br>2. Regulatory Environment<br>As blockchain technology continues to mature, regulatory frameworks will evolve. Hedera must remain compliant with regulations to avoid legal challenges that could hinder its growth.<br><br>3. Adoption and Awareness<br>Hedera needs to enhance its visibility and educate businesses and developers on the advantages of its technology. Effective marketing and outreach strategies will be crucial for driving adoption.<br><br>4. Perception of Centralization<br>While Hedera’s governance model provides stability, the presence of large organizations in its council could raise concerns about centralization. Transparency and accountability will be vital in addressing these concerns.<br><br>5. Technical Complexity<br>For developers transitioning from traditional platforms, understanding Hedera’s architecture and features may pose a learning curve. Offering support and documentation will be critical for easing this transition.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Road Ahead for Hedera</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Expanding Ecosystem Partnerships<br>Hedera is likely to continue forging partnerships with various organizations, enhancing its use cases and encouraging adoption. Collaborations can foster innovation and broaden the ecosystem’s capabilities.<br><br>2. Enhancing Developer Resources<br>As interest in Hedera grows, the platform may invest in educational resources and tools for developers. Providing comprehensive documentation, SDKs, and community support will facilitate easier onboarding.<br><br>3. Innovations in Privacy and Security<br>By focusing on privacy-enhancing technologies, such as zero-knowledge proofs, Hedera could strengthen its appeal to enterprises and sectors that prioritize data confidentiality.<br><br>4. Global Expansion<br>Hedera may look to expand its presence in emerging markets where blockchain adoption is gaining momentum. Tailoring solutions to meet local needs could drive wider acceptance and usage.<br><br>5. Commitment to Sustainability<br>Hedera can position itself as a leader in eco-friendly blockchain solutions, promoting its low energy consumption and sustainability practices to attract environmentally conscious users and enterprises.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Hedera Hashgraph represents an innovative approach to distributed ledger technology, addressing the limitations of traditional blockchains through its unique consensus mechanism and governance model. With its commitment to scalability, security, decentralization, and sustainability, Hedera aims to empower developers and users to create and interact with decentralized applications seamlessly.<br><br>As the demand for efficient and secure blockchain solutions continues to grow, Hedera stands poised to play a critical role in shaping the future of decentralized technology. By addressing challenges head-on and leveraging its advantages, Hedera is likely to continue attracting attention from businesses, developers, and users alike, establishing itself as a leading force in the evolving landscape of blockchain and distributed ledger technology.<br><br>In conclusion, Hedera stands as a promising solution that not only meets the challenges of today’s digital economy but also paves the way for a more connected, efficient, and decentralization-focused future.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "v9FQ0ufFLT",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
